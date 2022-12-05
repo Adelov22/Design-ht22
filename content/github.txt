@@ -1,4 +1,4 @@
 ---
 Social:
-    url: https://github.com/Adelov22/designP
+    url: https://github.com/Adelov22/design-ht22
 ---

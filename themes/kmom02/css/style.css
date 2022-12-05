@@ -344,6 +344,184 @@ pre code {
   line-height: 1.4;
 }
 
+/* technologies.scss*/
+.tech-page {
+  display: grid;
+  grid-template-columns: 50% 50% auto;
+  grid-template-rows: 200px 200px 200px 200px;
+  gap: 2em 2em;
+  font-family: sans-serif;
+}
+
+.tech-box {
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+}
+.tech-box img {
+  width: 100%;
+  height: 100%;
+}
+.tech-box h2 {
+  position: absolute;
+  padding: 1em 2em;
+  background-color: rgba(219, 124, 52, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: -20;
+}
+
+.tech-box:hover {
+  box-shadow: 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.css {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.css img {
+  height: 100%;
+  width: 100%;
+}
+
+.html {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.html img {
+  height: 100%;
+  width: 100%;
+}
+
+.javascript {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.javascript img {
+  height: 100%;
+  width: 100%;
+}
+
+.php {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.php img {
+  height: 100%;
+  width: 100%;
+}
+
+.python {
+  grid-column: 1/-1;
+}
+.python img {
+  height: 100%;
+  width: 100%;
+}
+
+.git {
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.git img {
+  height: 100%;
+  width: 100%;
+}
+
+.sqlite {
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.sqlite img {
+  height: 100%;
+  width: 100%;
+}
+
+.side-bar {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "top-left" "top-right" "bottom";
+  }
+}
+/* tech.scss */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px 600px 200px;
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "top-left" "top-right" "bottom";
+  }
+}
+.grid {
+  display: grid;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+.top-left {
+  grid-area: top-left;
+}
+
+.top-right {
+  grid-area: top-right;
+}
+
+.main {
+  grid-column: 2/2;
+  grid-row: 2/3;
+}
+
+.side-bar {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #3c3c3c;
+  margin: 1em;
+}
+
+.container div {
+  padding: 2em;
+}
+
+.container div:first-child {
+  background-color: rgb(210, 239, 196);
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "top-left" "top-right" "bottom";
+  }
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6649,9 +6827,9 @@ blockquote {
 }
 
 .nav li:first-child:hover {
-  background-color: cornflowerblue;
+  background-color: rgb(99, 147, 236);
 }
 
 .nav li:last-child:hover {
-  background-color: cornflowerblue;
+  background-color: rgb(100, 149, 237);
 }

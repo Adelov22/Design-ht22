@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #3c3c3c;
+    margin: 1em;
+}
+
+.container div {
+    padding: 2em;
+}
+
+.container div:first-child {
+    background-color: rgb(210, 239, 196);
+}
+
+@media screen and (max-width: 960px) {
+    .main {
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'top-left' 'top-right' 'bottom';
+    }
+}

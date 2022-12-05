@@ -3,7 +3,9 @@
 
 @import 'blockquotes';
 @import 'code';
-
+@import 'technologies';
+@import 'tech';
+@import 'tech2';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -225,11 +227,11 @@ blockquote {
 }
   
 .nav li:first-child:hover {
-    background-color: cornflowerblue;
+    background-color: rgb(99, 147, 236);
 
 }
   
 .nav li:last-child:hover {
-    background-color: cornflowerblue;
+    background-color: rgb(100, 149, 237);
 
 }
